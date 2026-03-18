@@ -244,3 +244,43 @@ nav {
   border-radius: 6px;
   transition: width 0.4s ease;
 }
+
+/* Resources */
+.resource-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.resource-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #d0d7e4;
+  font-size: 0.95rem;
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background: #0f2347;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 24px;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+/* For the Responisve css */
+@media (max-width: 600px) {
+  .brand-main {
+    font-size: 1rem;
+  }
+  .nav-links a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+}
