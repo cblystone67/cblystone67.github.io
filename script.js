@@ -32,7 +32,7 @@ function updateProgress() {
   const percent = (checked / totalItems) * 100;
 
   progressFill.style.width = percent + "%";
-  progressText.textContent = checked + " of" + totalItems + " completed";
+  progressText.textContent = checked + " of " + totalItems + " completed";
 }
 
 //Toggle the items
