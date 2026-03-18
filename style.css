@@ -55,14 +55,14 @@ nav {
 
 .brand-main {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.04em;
 }
 
 .brand-sub {
   color: #3b7fd4;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -272,28 +272,31 @@ footer {
 }
 
 /* For the Responisve css */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
-    justify-content: center;
     height: auto;
     padding: 16px 0;
     gap: 12px;
+    text-align: center;
+  }
+  .nav-brand {
+    align-items: center;
   }
   .brand-main {
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.3rem;
   }
   .brand-sub {
-    text-align: center;
+    font-size: 0.72rem;
   }
   .nav-links {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 6px;
   }
   .nav-links a {
     padding: 6px 10px;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
   .hero h2 {
     font-size: 1.7rem;
