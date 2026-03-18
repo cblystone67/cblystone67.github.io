@@ -157,3 +157,62 @@ nav {
   color: #0f2347;
   margin-bottom: 16px;
 }
+
+/* Checklist */
+.checklist-wrapper {
+  max-width: 720px;
+  margin: 32px auto 0;
+}
+
+.checklist {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid #d0d7e4;
+}
+
+.checklist li:hover {
+  background: #d0d7e4;
+}
+
+.check-box {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #2563a8;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: white;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.checklist li.checked .check-box {
+  background: #2563a8;
+  border-color: #2563a8;
+}
+
+.checklist li.checked .check-box::after {
+  content: "✅";
+}
+
+.item-text {
+  font-size: 0.95rem;
+}
+
+.checklistli.checked .item-text {
+  text-decoration: line-through;
+  color: #888;
+}
