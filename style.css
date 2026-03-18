@@ -55,7 +55,7 @@ nav {
 
 .brand-main {
   color: #ffffff;
-  font-size: 0.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.04em;
 }
@@ -273,8 +273,23 @@ footer {
 
 /* For the Responisve css */
 @media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 16px 0;
+    gap: 12px;
+  }
   .brand-main {
     font-size: 1rem;
+    text-align: center;
+  }
+  .brand-sub {
+    text-align: center;
+  }
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .nav-links a {
     padding: 6px 10px;
